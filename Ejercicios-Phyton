@@ -1,0 +1,79 @@
+
+
+ejercicio 55- 
+a = int(input('Ingresa un numero: '))
+b = 2920
+print(a*b)
+
+Ejercicio 56-
+lista = [10,80,70,90,100,95,87,60,75,98,72,55,45,98,86,30,99,71,15]
+contador=0
+promedio=65
+    
+for i in range(len(lista[:])):
+    if promedio>=lista[i]:
+        contador=contador+1
+        lista.extend([lista[i]])
+print("La cantidad de calificaciones menores a 65 son: " + str(contador))
+
+Ejercicio 57-
+lista = [180, 172, 178, 185, 190, 195, 192, 200, 210, 190]
+mean = sum(lista)/len(lista)
+print("el promedio es:",mean)
+lista.sort()
+print(lista)
+
+
+Ejercicio 58-
+numero=int(input("digite un numero: "))
+print("su numero es: ", numero)
+print()
+numero = int(str(numero)[::-1])
+print("Su numero invertido es:", numero)
+
+
+Ejercicio 59-
+num = numero=int(input("digite un numero: "))
+absoluto = abs( num)
+print("El valor absoluto del numero ingresado es: ", absoluto) 
+
+
+Ejercicio 60-
+num = [-6,0,25,-143,-43]
+res =  [abs(ele) for ele in num] 
+print("Absolute value list : " + str(res)) 
+
+
+Ejercicio 61-
+lista = [95,68,92,88]
+mean = sum(lista)/len(lista)
+print("el promedio de nancy es:",mean)
+
+
+Ejercicio 62-
+lista = [75,88,84,70,65,99,91,76,43,69]
+mean = sum(lista)/len(lista)
+print("el promedio de los 10 numeros es:",mean)
+
+
+Ejercicio 63-
+lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+print(lista[10::] + lista[0:10])
+
+
+Ejercicio 64-
+def factorial(n): 
+    return 1 if (n==1 or n==0) else n * factorial(n - 1);  
+  
+num = int(input('escribe un numero del 1 al 7: ')); 
+print("Factorial de",num,"es", factorial(num))
+
+
+Ejercicio 65-
+X = int(input('escribe un numero para X: '))
+Y = int(input('escribe un numero para Y: '))
+Z = int(input('escribe un numero para Z: '))
+
+from math import factorial
+print ("LA SUMA FACTORIAL ES:", factorial(X) + factorial(Y) + factorial(Z))
+
